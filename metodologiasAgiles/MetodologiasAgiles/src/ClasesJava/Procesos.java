@@ -14,9 +14,4 @@ public class Procesos {
         return a + b;
     }
 
-    public static void main(String[] args) {
-        float a = 2, b = 3, r;
-        r = Float.sum(a, b);
-        System.out.println(r);
-    }
 }
