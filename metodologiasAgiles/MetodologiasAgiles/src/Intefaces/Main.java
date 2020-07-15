@@ -105,7 +105,6 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbtnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSumaActionPerformed
-        // TODO add your handling code here:
         sumar();
     }//GEN-LAST:event_jbtnSumaActionPerformed
 
