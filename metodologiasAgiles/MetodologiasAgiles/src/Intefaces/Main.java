@@ -5,6 +5,8 @@
  */
 package Intefaces;
 
+import ClasesJava.Procesos;
+
 /**
  *
  * @author villa
@@ -45,6 +47,11 @@ public class Main extends javax.swing.JFrame {
         jLabel3.setText("Numero 2:");
 
         jbtnSuma.setText("Sumar");
+        jbtnSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnSumaActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Resultado:");
 
@@ -97,6 +104,11 @@ public class Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jbtnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSumaActionPerformed
+        // TODO add your handling code here:
+        sumar();
+    }//GEN-LAST:event_jbtnSumaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -142,4 +154,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField jtxtNum2;
     private javax.swing.JTextField jtxtRes;
     // End of variables declaration//GEN-END:variables
+    
+    Procesos p = new Procesos();
+    public void sumar(){
+        float res;
+        res = p.sumar(Float.valueOf(jtxtNum1.getText()), Float.valueOf(jtxtNum2.getText()));
+        jtxtRes.setText(String.valueOf(res));
+    }
 }
